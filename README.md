@@ -3,11 +3,11 @@
 
  Bu proje, MVVM (Model-View-ViewModel) mimarisi kullanılarak geliştirilmiş bir haber uygulamasını içermektedir.
 
-##Genel Bakış
+## Genel Bakış
 
 Bu proje, API kullanarak haber verilerini alıp gösteren bir Android uygulamasını içermektedir. Aşağıda, projeyi anlamak ve çalıştırmak için gerekli bilgiler bulunmaktadır.
 
-##Özellikler
+## Özellikler
 
 - Haberlerin gösterimi için model tasarımı yapılmıştır , fragmentlarda bu tasarım üzerinden haberler kullanıcıya gösterilecektir.Tasarımda habere ait; görsel , kaynak , yükleme zamanı , başlık ve kısa özet gösterilmektedir.Recyclerview içinde gösterilen haberler tıklanıldığı zaman habere ait detaylar web view içinde kullanıcıya gösterilmektedir.
 
@@ -20,7 +20,7 @@ database içine kaydedilebilir.
 
 - SearchNewFragment kısmında ise bir edit text yardımı ile girdiğimiz değerler üzerinden sorgu yapabilmekteyiz.Elde edilen sonuçlar recyclerview içinde kullanıcıya gösterilmektedir.
 
-##Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 
 - Kotlin
 
@@ -52,12 +52,12 @@ database içine kaydedilebilir.
 ![NewsAppWebView 5](app/src/main/java/com/androiddevs/mvvmnewsapp/ui/mvvmnesapp/util/screenshots/NewsAppWebView.jpg)
 
 
-##Ek Bilgiler
+## Ek Bilgiler
 
 Bu uygulama News API kullanılarak geliştirilmiştir.
 
 
-##Kurulum
+## Kurulum
 
 Proje dosyalarını bilgisayarınıza klonlayın veya ZIP olarak indirin.
 
