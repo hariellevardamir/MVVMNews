@@ -11,9 +11,14 @@ Bu proje, API kullanarak haber verilerini alıp gösteren bir Android uygulamas�
 ##Özellikler
 
 Haberlerin gösterimi için model tasarımı yapılmıştır , fragmentlarda bu tasarım üzerinden haberler kullanıcıya gösterilecektir.Tasarımda habere ait; görsel , kaynak , yükleme zamanı , başlık ve kısa özet gösterilmektedir.Recyclerview içinde gösterilen haberler tıklanıldığı zaman habere ait detaylar web view içinde kullanıcıya gösterilmektedir.
+
 Breaking News Fragment içinde API den gelen son dakika haberleri kullanıcıya recyclerview içinde gösterilmektedir.İstenilen bir habere tıklanamsı ile haberin detaylarına web view içinde kullanıcıya gösterilmektedir.
+
 Explore News Fragment içinde çeşitli kategoriler bulunmakta.Bu kategorilere tıklanamsı sonucunda kategoriye ait haberle recyclerview içinde kullanıcıya gösterilmektedir.
-Haber web view içinde açıldığında bir float action button görürüz.Bu buton yardımı ile mevcut haber room database içine kaydedilir ve kaydedilen haberler recyclerviewiçnde Saved News Fragment kısmında gösterilir.Burada haber sağa ve sola kaydırılması ile haberin room database içinden silme işlemi gerçekleştirilmektedir.Bu silme işlemi kullanıcıya bir snackbar ile gösterilmektedir.Snackbar içinde yer alan buton yardımıyla silinen haber istenirse tekrar room database içine kaydedilebilir.
+
+Haber web view içinde açıldığında bir float action button görürüz.Bu buton yardımı ile mevcut haber room database içine kaydedilir ve kaydedilen haberler recyclerviewiçnde Saved News Fragment kısmında gösterilir.Burada haber sağa ve sola kaydırılması ile haberin room database içinden silme işlemi gerçekleştirilmektedir.Bu silme işlemi kullanıcıya bir snackbar ile gösterilmektedir.Snackbar içinde yer alan buton yardımıyla silinen haber istenirse tekrar room 
+database içine kaydedilebilir.
+
 SearchNewFragment kısmında ise bir edit text yardımı ile girdiğimiz değerle üzerinden sorgu yapabilmekteyiz.Elde edilen sonuçlar recyclerview içinde kullanıcıya gösterilmektedir.
 
 
