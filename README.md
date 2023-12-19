@@ -25,14 +25,23 @@ SearchNewFragment kısmında ise bir edit text yardımı ile girdiğimiz değerl
 ##Kullanılan Teknolojiler
 
 Kotlin
+
 Android Architecture Components (ViewModel, LiveData)
+
 ViewBinding
+
 NavigationComponent
+
 Retrofit
+
 Glide
+
 Database(room)
+
 Coroutines
+
 RecyclerView
+
 WebView
 
 
