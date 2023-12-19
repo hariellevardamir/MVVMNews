@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ivSports"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/news_app_iv_sports"
+                        android:theme="@style/roundImageView" />
+
+                    <TextView
+                        android:id="@+id/tvSports"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/ivSports"
+                        android:layout_alignBottom="@+id/ivSports"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Sports"
+                        android:textColor="@color/white"
+                        tools:ignore="NotSibling" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPoliticsTechnology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutSports">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ivPolitics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/news_app_iv_politics"
+                        android:theme="@style/roundImageView" />
+
+                    <TextView
+                        android:id="@+id/tvPolitics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/ivPolitics"
+                        android:layout_alignBottom="@+id/ivPolitics"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Politics"
+                        android:textColor="@color/white"
+                        tools:ignore="NotSibling" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ivTechnology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/news_app_iv_technology"
+                        android:theme="@style/roundImageView" />
+
+                    <TextView
+                        android:id="@+id/tvTechnology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/ivTechnology"
+                        android:layout_alignBottom="@+id/ivTechnology"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Technology"
+                        android:textColor="@color/white"
+                        tools:ignore="NotSibling" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutEconomyMagazine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutPoliticsTechnology">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ivEconomy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/news_app_iv_economy"
+                        android:theme="@style/roundImageView" />
+
+                    <TextView
+                        android:id="@+id/tvEconomy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/ivEconomy"
+                        android:layout_alignBottom="@+id/ivEconomy"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Economy"
+                        android:textColor="@color/white"
+                        tools:ignore="NotSibling" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ivMagazine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/news_app_iv_magazines"
+                        android:theme="@style/roundImageView" />
+
+                    <TextView
+                        android:id="@+id/tvMagazine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/ivMagazine"
+                        android:layout_alignBottom="@+id/ivMagazine"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Magazine"
+                        android:textColor="@color/white"
+                        tools:ignore="NotSibling" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

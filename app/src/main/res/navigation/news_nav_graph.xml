@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_nav_graph"
+    app:startDestination="@id/breakingNewsFragment">
+
+    <fragment
+        android:id="@+id/breakingNewsFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.mvvmnesapp.ui.fragment.BreakingNewsFragment"
+        android:label="BreakingNewsFragment">
+        <action
+            android:id="@+id/action_breakingNewsFragment_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.mvvmnesapp.ui.fragment.ArticleFragment"
+        android:label="ArticleFragment">
+        <argument
+            android:name="article"
+            app:argType="com.androiddevs.mvvmnewsapp.ui.mvvmnesapp.models.Article" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/searchNewsFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.mvvmnesapp.ui.fragment.SearchNewsFragment"
+        android:label="SearchNewsFragment">
+        <action
+            android:id="@+id/action_searchNewsFragment_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/savedNewsFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.mvvmnesapp.ui.fragment.SavedNewsFragment"
+        android:label="SavedNewsFragment">
+        <action
+            android:id="@+id/action_savedNewsFragment_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/exploreNewsFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.mvvmnesapp.ui.fragment.ExploreNewsFragment"
+        android:label="ExploreNewsFragment">
+        <action
+            android:id="@+id/action_exploreNewsFragment_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_exploreNewsFragment_to_sportsNewsFragment"
+            app:destination="@id/sportsNewsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_exploreNewsFragment_to_politicsNewsFragment"
+            app:destination="@id/politicsNewsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_exploreNewsFragment_to_technologyNewsFragment"
+            app:destination="@id/technologyNewsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_exploreNewsFragment_to_economyNewsFragment"
+            app:destination="@id/economyNewsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_exploreNewsFragment_to_magazineNewsFragment"
+            app:destination="@id/magazineNewsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/sportsNewsFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.mvvmnesapp.ui.fragment.SportsNewsFragment"
+        android:label="SportsNewsFragment">
+        <action
+            android:id="@+id/action_sportsNewsFragment_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_sportsNewsFragment_to_searchNewsFragment2"
+            app:destination="@id/searchNewsFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/economyNewsFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.mvvmnesapp.ui.fragment.EconomyNewsFragment"
+        android:label="EconomyNewsFragment">
+        <action
+            android:id="@+id/action_economyNewsFragment_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/politicsNewsFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.mvvmnesapp.ui.fragment.PoliticsNewsFragment"
+        android:label="PoliticsNewsFragment">
+        <action
+            android:id="@+id/action_politicsNewsFragment_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/technologyNewsFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.mvvmnesapp.ui.fragment.TechnologyNewsFragment"
+        android:label="TechnologyNewsFragment">
+        <action
+            android:id="@+id/action_technologyNewsFragment2_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/magazineNewsFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.mvvmnesapp.ui.fragment.MagazineNewsFragment"
+        android:label="MagazineNewsFragment">
+        <action
+            android:id="@+id/action_magazineNewsFragment_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+
+</navigation>
