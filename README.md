@@ -1,14 +1,19 @@
 # MVVMNews
  MVVMNewsApp
 
+
  Bu proje, MVVM (Model-View-ViewModel) mimarisi kullanılarak geliştirilmiş bir haber uygulamasını içermektedir.
 
+
 ##Genel Bakış
+
 
 Bu proje, API kullanarak haber verilerini alıp gösteren bir Android uygulamasını içermektedir. Aşağıda, projeyi anlamak ve çalıştırmak için gerekli bilgiler bulunmaktadır.
 
 
+
 ##Özellikler
+
 
 Haberlerin gösterimi için model tasarımı yapılmıştır , fragmentlarda bu tasarım üzerinden haberler kullanıcıya gösterilecektir.Tasarımda habere ait; görsel , kaynak , yükleme zamanı , başlık ve kısa özet gösterilmektedir.Recyclerview içinde gösterilen haberler tıklanıldığı zaman habere ait detaylar web view içinde kullanıcıya gösterilmektedir.
 
@@ -24,25 +29,26 @@ SearchNewFragment kısmında ise bir edit text yardımı ile girdiğimiz değerl
 
 ##Kullanılan Teknolojiler
 
-Kotlin
 
-Android Architecture Components (ViewModel, LiveData)
+-Kotlin
 
-ViewBinding
+-Android Architecture Components (ViewModel, LiveData)
 
-NavigationComponent
+-ViewBinding
 
-Retrofit
+-NavigationComponent
 
-Glide
+-Retrofit
 
-Database(room)
+-Glide
 
-Coroutines
+-Database(room)
 
-RecyclerView
+-Coroutines
 
-WebView
+-RecyclerView
+
+-WebView
 
 
 ## Ekran Görüntüleri
